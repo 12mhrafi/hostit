@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- googel font -->
+    <!-- Swipper JS Link -->
+    
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Swipper JS Link -->
+    <!-- tailwindcss and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwindcss and daisy ui -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                main:'#f8f8f8',
+                sColor:'#03a7d3',
+                rColor:"#ff4646",
+                light:'#F5F5F5',
+                dark:'#0c0c0c',
+
+              }
+            
+            }
+          }
+        }
+      </script>
+      <style>
+        .sans-serif{
+            font-family: 'Open Sans', sans-serif;
+        }
+      </style>
+      <link rel="stylesheet" href="style.css">
+    <title>Hosting  Web Template</title>
+</head>
+<body class = "sans-serif bg-main" >
+   <header>
+    <!-- navbar -->
+        <div class="navb bg-dark text-white lg-size lg:block hidden">
+            <div class="container mx-auto px-16">
+                <nav class = "flex justify-between items-center h-20">
+                    <div class="logo">
+                        <a class = " text-5xl font-[700]" href="#"> <span class = "uppercase">W</span>oo<span class = "uppercase">dy</span></a>
+                    </div>
+                    <ul class = "flex gap-8">
+                        <li><a class = "text-main" href="#">HOME</a></li>
+                        <li><a class = "hover:text-main" href="#about">ABOUT</a></li>
+                        <li><a class = "hover:text-main" href="#services">SERVICES</a></li>
+                        <li><a class = "hover:text-main" href="#projects">PROJECTS</a></li>
+                        <li><a class = "hover:text-main" href="#">PAGES</a></li>
+                        <li><a class = "hover:text-main" href="#quotes">CONTACT</a></li>
+                        <li><a class = " text-white h-full p-5"><i class="ml-3 fa fa-phone mr-4"></i>01943385634</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- mobile  -->
+        <div class="navb bg-dark text-white lg-size lg:hidden block">
+            <div class = "container mx-auto px-16">
+                <nav class="flex justify-between  h-20 items-center">
+                    <div class="logo">
+                        <a class = " text-5xl font-[700]" href="#"> <span class = "uppercase">W</span>oo<span class = "uppercase">dy</span></a>
+                    </div>
+                    <div>
+                        <ul class = "absolute mobile-nav text-white left-0 gap-3 w-52 top-0 bg-dark z-50 h-screen flex flex-col">
+                            <li class = "ml-5 mt-5 mb-3"><a class = "text-white text-5xl font-[700]" href="#"> <span class = "uppercase">W</span>oo<span class = "uppercase">dy</span></a></li>
+                            <li class = "ml-5"><a href="#">HOME</a></li>
+                            <li class = "ml-5"><a href="#about">ABOUT</a></li>
+                            <li class = "ml-5"><a href="#services">SERVICES</a></li>
+                            <li class = "ml-5"><a href="#projects">PROJECTS</a></li>
+                            <li class = "ml-5"><a href="#">PAGES</a></li>
+                            <li class = "ml-5"><a href="#quotes">CONTACT</a></li>
+                            <li><a class = " text-white h-full p-5"><i class="ml-3 fa fa-phone mr-4"></i>01943385634</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <i id = "openMenu" class="fa-solid fa-bars text-2xl"></i>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- mobile  -->
+        <!-- mobile  -->
+    <!-- navbar -->
+    <!-- Swiper js slider-->
+  <div class="swiper bg-dark mySwiper">
+    <div class="swiper-wrapper  container m-auto px-4">
+        <div class="swiper-slide w-full h-screen grid md:grid-cols-2 items-center justify-center px-16" >
+            <div class = "">
+               <div class = " flex flex-col gap-5 text-center mt-32 md:mt-0 md:text-start">
+                <h2 class = "text-3xl md:text-3xl lg:text-4xl font-[800] text-white">Fast & Secure
+                   <br> Web Hosting</h2>
+                <p class = "text-white">Anything embarrassing hidden in the middle of text. All the Lorem Ipsuanything embarrassing hidden in the middle of text. All the Lorem Ipsumm</p>
+                <div>  <button class = "py-3 px-12 border border-sColor hover:text-sColor hover-transition rounded-md  hover:bg-transparent bg-sColor text-white">Read More</button>
+                <button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor">Contact Us</button></div>
+                </div>
+                <div>    
+              </div>
+            </div>
+            
+            <div>
+                <img src="./images/hero.png" class="w-3/4" alt="no image found">
+            </div>
+            </div>
+            <div class="swiper-slide w-full h-screen grid md:grid-cols-2 items-center justify-center" >
+                <div class = "">
+                   <div class = " flex flex-col gap-5 text-center mt-32 md:mt-0 md:text-start">
+                    <h2 class = "text-3xl md:text-3xl lg:text-4xl font-[800] text-white">Fast & Secure
+                       <br> Web Hosting</h2>
+                    <p class = "text-white">Anything embarrassing hidden in the middle of text. All the Lorem Ipsuanything embarrassing hidden in the middle of text. All the Lorem Ipsumm</p>
+                    <div>  <button class = "py-3 px-12 border border-sColor hover:text-sColor hover-transition rounded-md  hover:bg-transparent bg-sColor text-white">Read More</button>
+                    <button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor">Contact Us</button></div>
+                    </div>
+                    <div>    
+                  </div>
+                </div>
+                
+                <div>
+                    <img src="./images/hero.png" class="w-3/4" alt="no image found">
+                </div>
+                </div>
+                <div class="swiper-slide w-full h-screen grid md:grid-cols-2 items-center justify-center" >
+                    <div class = "">
+                       <div class = " flex flex-col gap-5 text-center mt-32 md:mt-0 md:text-start">
+                        <h2 class = "text-3xl md:text-3xl lg:text-4xl font-[800] text-white">Fast & Secure
+                           <br> Web Hosting</h2>
+                        <p class = "text-white">Anything embarrassing hidden in the middle of text. All the Lorem Ipsuanything embarrassing hidden in the middle of text. All the Lorem Ipsumm</p>
+                        <div>  <button class = "py-3 px-12 border border-sColor hover:text-sColor hover-transition rounded-md  hover:bg-transparent bg-sColor text-white">Read More</button>
+                        <button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor">Contact Us</button></div>
+                        </div>
+                        <div>    
+                      </div>
+                    </div>
+                    
+                    <div>
+                        <img src="./images/hero.png" class="w-3/4" alt="no image found">
+                    </div>
+                    </div>
+            </div>
+                
+                    <div class="swiper-button-next text-white mt-64 p-8 bg-sColor hover:text-sColor hover:bg-white"></div>
+                    <div class="swiper-button-prev text-white mt-64 p-8 bg-sColor hover:text-sColor hover:bg-white"></div>
+                    
+                  
+                </div>
+
+  <!-- Swiper JS -->
+   </header>
+
+
+   <!-- main start -->
+ <main>
+    <!-- our services start-->
+
+
+     <!-- our services end-->
+   <section id = "services" class = "mt-24">
+        <div class="services">
+            <div class="container mx-auto px-16">
+                <h2  class = "text-3xl  md:text-4xl lg:text-5xl font-[700] h-title text-center mb-12" >Our Services</h2>
+                 <!-- our services row-->
+                <div class="services-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                    <!-- our services col-->
+                    <div class="services-col border flex flex-col gap-4 p-12 shadow ">
+                        <div class = " bg-sColor w-20 h-20 rounded-full m-auto flex items-center justify-center" >
+                            <img class = "w-10"  src="./images/s1.png" alt="no image found">
+                        </div>
+                        <div class = 'flex gap-2 w-full flex-col text-center'>
+                            <h4 class = " text-xl font-[700] tracking-tighter">Shared Hosting</h4>
+                            <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+                            <p class = "text-sColor"><a href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a></p>
+                        </div>
+                    </div>
+                    <div class="services-col border flex flex-col gap-4 p-12 shadow ">
+                        <div class = " services-bg bg-sColor w-20 h-20 rounded-full m-auto flex items-center justify-center" >
+                            <img class = "w-10"  src="./images/s2.png" alt="no image found">
+                        </div>
+                        <div class = 'flex gap-2 w-full flex-col text-center'>
+                            <h4 class = " text-xl font-[700] tracking-tighter">Dedicated Hosting</h4>
+                            <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+                            <p class = "text-sColor"><a href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a></p>
+                        </div>
+                    </div>
+                    <div class="services-col border flex flex-col gap-4 p-12 shadow">
+                        <div class = " bg-sColor w-20 h-20 rounded-full m-auto flex items-center justify-center" >
+                            <img class = "w-10"  src="./images/s3.png" alt="no image found">
+                        </div>
+                        <div class = 'flex gap-2 w-full flex-col text-center'>
+                            <h4 class = " text-xl font-[700] tracking-tighter">Dedicated Hosting</h4>
+                            <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+                            <p class = "text-sColor"><a href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a></p>
+                        </div>
+                    </div>
+                    <div class="services-col border flex flex-col gap-4 p-12 shadow">
+                        <div class = " bg-sColor w-20 h-20 rounded-full m-auto flex items-center justify-center" >
+                            <img class = "w-10"  src="./images/s4.png" alt="no image found">
+                        </div>
+                        <div class = 'flex gap-2 w-full flex-col text-center'>
+                            <h4 class = " text-xl font-[700] tracking-tighter">VPS Hosting</h4>
+                            <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+                            <p class = "text-sColor"><a href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a></p>
+                        </div>
+                    </div>
+                    <div class="services-col border flex flex-col gap-4 p-12 shadow">
+                        <div class = " bg-sColor w-20 h-20 rounded-full m-auto flex items-center justify-center" >
+                            <img class = "w-10"  src="./images/s5.png" alt="no image found">
+                        </div>
+                        <div class = 'flex gap-2 w-full flex-col text-center'>
+                            <h4 class = " text-xl font-[700] tracking-tighter">Wordpress Hosting</h4>
+                            <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+                            <p class = "text-sColor"><a href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a></p>
+                        </div>
+                    </div>
+                    <div class="services-col border flex flex-col gap-4 p-12 shadow">
+                        <div class = " bg-sColor w-20 h-20 rounded-full m-auto flex items-center justify-center" >
+                            <img class = "w-10"  src="./images/s6.png" alt="no image found">
+                        </div>
+                        <div class = 'flex gap-2 w-full flex-col text-center'>
+                            <h4 class = " text-xl font-[700] tracking-tighter">Domain Name</h4>
+                            <p>Generators on the Internet tend to repeat predefined chunks as necessary</p>
+                            <p class = "text-sColor"><a href="#">Read More<i class="fa fa-arrow-right ms-2"></i></a></p>
+                        </div>
+                    </div>
+           
+       
+                    <!-- our services col-->
+                </div>
+                <!-- our services row-->
+            </div>
+        </div>
+   </section>
+   <!-- our services -->
+   <!-- about us -->
+   <section id = "about" class = "mt-24">
+    <div class="about-us ">
+        <div class="container mx-auto px-16">
+            <div class="about-row grid  md:grid-cols-2 gap-16 ">
+
+                <div class = 'flex flex-col gap-8 justify-center mb-12 lg:0 md:mt-12 lg:mt-0 mt-0 '>
+                    <h2 class = " text-3xl text-center md:text-start  md:text-4xl lg:text-5xl font-[700] h-a-title">About Us</h2>
+                    <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                    <div>
+                        <button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor">Read More</button></div>
+                    </div>
+            
+                <div class = "flex justify-center items-center">
+                    <img  src="./images/about.png" alt="no image found">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- about us -->
+   <!-- manage server -->
+   <section  class = "mt-24">
+    <div class="manage-server bg-dark py-10" >
+        <div class="container mx-auto px-16">
+            <div class="manage-server-row grid  md:grid-cols-2 gap-16 ">
+                <div class = "flex justify-center items-center relative">
+                    <img class="z-20"  src="./images/server.jpg" alt="no image found">
+                    <i class="fa fa-play absolute z-50 text-white p-5 text-2xl bg-sColor h-16 w-16 flex items-center justify-center rounded-full" ></i>
+                </div>
+                <div class = 'flex flex-col gap-8 justify-center mb-12 lg:0 md:mt-12 lg:mt-0 mt-0 '>
+                    <h2 class = " text-3xl text-white text-center md:text-start  md:text-4xl lg:text-5xl font-[700] h-a-title">Let us manage your server</h2>
+                    <p class = "text-white">Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore</p>
+                    <div>
+                        <button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor">Read More</button></div>
+                    </div>
+            
+            
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+   <!-- manage server -->
+   <!-- our pricing -->
+   <section id = "services" class = "mt-24">
+      <div class="services">
+        <div class="container mx-auto px-20  lg:px-36">
+            <h2  class = "text-3xl  md:text-4xl lg:text-5xl font-[700] h-title text-center mb-12" >Our Pricing</h2>
+             <!-- our services row-->
+            <div class="services-row grid  md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+                <!-- our services col-->
+                <div class="services-col border flex flex-col gap-4 p-12 shadow bg-white rounded-3xl hover:bg-sColor hover:text-white hover-transition">
+                    <div class = " m-auto flex items-center justify-center" >
+                       <p><span class = "text-4xl font-[700]">$</span><span class="text-5xl font-[700] ml-2">44</span></p>
+                    </div>
+                     <div class="services-col flex flex-col gap-4 text-center">
+                    <h4 class = "text-2xl font-[700] tracking-tighter text-sColor">STARTUP</h4>
+                    <p>2GB RAM</p>
+                    <p>20GB SSD Cloud Storage</p>
+                    <p> Weekly Backups</p>
+                    <p> DDoS Protection</p>
+                    <p> Full Root Access</p>
+                     <p> 24/7/365 Tech Support</p>
+                     <button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor">See Details</button>
+                  </div>
+                </div>
+                <!-- our services col-->
+                                <!-- our services col-->
+                                <div class="services-col border flex flex-col gap-4 p-12 shadow bg-white rounded-3xl hover:bg-sColor hover-transition">
+                                    <div class = " m-auto flex items-center justify-center" >
+                                       <p><span class = "text-3xl font-[700]">$</span><span class="text-5xl font-[700] ml-2">99</span></p>
+                                    </div>
+                                     <div class="services-col flex flex-col  gap-4 text-center">
+                                        <h4 class = "text-2xl font-[700] tracking-tighter text-sColor">STARTUP</h4>
+                                    <p>4GB RAM</p>
+                                    <p>40GB SSD Cloud Storage</p>
+                                    <p> Weekly Backups</p>
+                                    <p> DDoS Protection</p>
+                                    <p> Full Root Access</p>
+                                     <p> 24/7/365 Tech Support</p>
+                                  </div>
+                                  <button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor">See Details</button>
+                                </div>
+                                <!-- our services col-->
+                                                <!-- our services col-->
+                <div class="services-col border flex flex-col gap-4 p-12 shadow hover:bg-sColor bg-white rounded-3xl hover-transition">
+                    <div class = " m-auto flex items-center justify-center" >
+                       <p><span class = "text-3xl font-[700]">$</span><span class="text-5xl font-[700] ml-2">139</span></p>
+                    </div>
+                     <div class="services-col flex flex-col gap-4 text-center">
+                        <h4 class = "text-2xl font-[700] tracking-tighter text-sColor">STARTUP</h4>
+                    <p>6GB RAM</p>
+                    <p>60GB SSD Cloud Storage</p>
+                    <p> Weekly Backups</p>
+                    <p> DDoS Protection</p>
+                    <p> Full Root Access</p>
+                     <p> 24/7/365 Tech Support</p>
+                     <button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor">See Details</button>
+                  </div>
+                </div>
+                <!-- our services col-->
+            </div>
+            <!-- our services row-->
+        </div>
+    </div>
+</section>
+   <!-- our pricing -->
+    <!-- testimonial -->
+    <section  class = "mt-24">
+        <div class="testimonial">
+            <div class="container mx-auto px-16">
+                  <!-- Swiper -->
+                        <div class="swiper testimonial-swipper shadow-lg">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-white p-10 ">
+                                <div class="flex flex-col md:flex-row">
+                                <img class="rounded-full w-36 m-auto mb-7 md:mb-0" src="./images/client.jpg" alt="">
+                            <div class = "ml-7 flex flex-col gap-4">
+                                <div>
+                                    <h3 class = 'text-xl text-sColor uppercase font-[700]'>Morojink</h3>
+                                    <p class = "text-red-600">customer</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                            </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white p-10">
+                                <div class="flex flex-col md:flex-row">
+                                <img class="rounded-full w-36 m-auto mb-7 md:mb-0" src="./images/client.jpg" alt="">
+                            <div class = "ml-7 flex flex-col gap-4">
+                                <div>
+                                    <h3 class = 'text-xl text-sColor uppercase font-[700]'>Morojink</h3>
+                                    <p class = "text-red-600">customer</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                            </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white p-10">
+                                <div class="flex flex-col md:flex-row">
+                                <img class="rounded-full w-36 m-auto mb-7 md:mb-0" src="./images/client.jpg" alt="">
+                            <div class = "ml-7 flex flex-col gap-4">
+                                <div>
+                                    <h3 class = 'text-xl text-sColor uppercase font-[700]'>Morojink</h3>
+                                    <p class = "text-red-600">customer</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                            </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white p-10">
+                                <div class="flex flex-col md:flex-row">
+                                <img class="rounded-full w-36 m-auto mb-7 md:mb-0" src="./images/client.jpg" alt="">
+                            <div class = "ml-7 flex flex-col gap-4">
+                                <div>
+                                    <h3 class = 'text-xl text-sColor uppercase font-[700]'>Morojink</h3>
+                                    <p class = "text-red-600">customer</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                            </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white p-10">
+                                <div class="flex flex-col md:flex-row">
+                                <img class="rounded-full w-36 m-auto mb-7 md:mb-0" src="./images/client.jpg" alt="">
+                            <div class = "ml-7 flex flex-col gap-4">
+                                <div>
+                                    <h3 class = 'text-xl text-sColor uppercase font-[700]'>Morojink</h3>
+                                    <p class = "text-red-600">customer</p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugia</p>
+                            </div>
+                                </div>
+                            </div>
+                            
+                            </div>
+                        </div>
+
+                        <!-- Swiper JS -->
+            </div>
+        </div>
+    </section>
+    <!-- testimonial -->
+        <!-- contact -->
+        <section  class = "mt-24">
+            <div class="contact">
+                <div class="container mx-auto px-16">
+                    <h2  class = "text-3xl  md:text-4xl lg:text-5xl font-[700] h-title text-center mb-12" >Get In Touch</h2>
+                    <div>
+                        <form action="!#">
+                            <div class = "flex flex-col gap-5 md:w-[60%] m-auto">
+                                <input class="p-3 border outline-none bg-white" type="text" placeholder="Your Name">
+                                <input class="p-3 border outline-none bg-white" type="email" placeholder="Your Email">
+                                <input class="p-3 border outline-none bg-white" type="number" placeholder="Your Phone">
+                                <textarea class="py-10 px-3 border outline-none bg-white" placeholder="Your Messages"></textarea>
+                                <div><button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor">Contact Us</button></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cotnact -->
+ </main>
+ <!-- main section -->
+ <!-- footer section -->
+ <footer class = "mt-24">
+    <div class="footer bg-black py-20">
+        <div class="container mx-auto px-16"> 
+            <!-- footer row -->
+            <div class="footer-row grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+                <!-- footer col -->
+                <div class="footer-col text-light">
+                    <ul class = "flex flex-col gap-y-8">
+                        <h2 class = "text-2xl font-[600]">Address</h2>
+                     <div class = "flex flex-col gap-y-6">
+                        <li><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</li>
+                        <li><i class="fa fa-phone-alt me-3"></i>+012 345 67890</li>
+                        <li><i class="fa fa-envelope me-3"></i>info@example.com</li>
+                        <li class = "flex gap-x-3">
+                            <a href="#"><i class = 'fab fa-facebook fa-2xl hover-transition hover:bg-white hover:text-main '></i></a>
+                            <a href="#"><i class = 'fab fa-whatsapp fa-2xl  hover-transition hover:bg-white hover:text-main '></i></a>
+                            <a href="#"><i class = 'fab fa-twitter fa-2xl  hover-transition hover:bg-white hover:text-main '></i></a>
+                            <a href="#"><i class = 'fab fa-telegram fa-2xl  hover-transition hover-transition hover:bg-white hover:text-main '></i></a>
+                        </li>
+                     </div>
+                   
+                    </ul>
+                   
+                </div>
+            
+                <div class="footer-col text-light">
+                    <ul class = "flex flex-col gap-7">
+                        <h2 class = "text-2xl font-[600]"> Links</h2>
+                     <div class = "flex flex-col gap-3 ">
+                      <li> <a class = "text-light flex  hover:text-main hover:tracking-widest hover-transition hover:text-rColor" href="#"><img class = "w-4 mr-2 object-cover" src="./images/nav-bullet.png" alt="no">Home</a></li>
+                      <li> <a class = "text-light flex hover:text-main hover:tracking-widest hover-transition hover:text-rColor" href="#"><img class = "w-4 mr-2 object-cover" src="./images/nav-bullet.png" alt="no">Contact Us</a></li>
+                      <li> <a class = "text-light flex hover:text-main hover:tracking-widest hover-transition hover:text-rColor" href="#"><img class = "w-4 mr-2 object-cover" src="./images/nav-bullet.png" alt="no">Our Services</a></li>
+                      <li> <a class = "text-light flex hover:text-main hover:tracking-widest hover-transition hover:text-rColor" href="#"><img class = "w-4 mr-2 object-cover" src="./images/nav-bullet.png" alt="no">Terms & Conditions </a></li>
+                      <li> <a class = "text-light flex hover:text-main hover:tracking-widest hover-transition hover:text-rColor" href="#"><img class = "w-4 mr-2 object-cover" src="./images/nav-bullet.png" alt="no">Support</a></li>
+                    
+                     </div>
+                   
+                    </ul>
+                </div>
+                <div class="footer-col text-light">
+                    <ul class = "flex flex-col gap-7">
+                        <h2 class = "text-2xl font-[600]">Info</h2>
+                     <div class = "flex flex-col gap-3 ">
+                        <p>necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful</p>
+                    
+                     </div>
+                   
+                    </ul>
+                </div>
+                <div class="footer-col text-light">
+                    <ul class = "flex flex-col gap-7">
+                        <h2 class = "text-2xl font-[600]">Subscribe</h2>
+                       <div class = "flex flex-col gap-3 ">
+                        <li><p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p></li>
+                        <li><div class = "relative">
+                         <form action="">
+                            <input type="email" class = "py-4 w-full text-white outline-none border-b-2 bg-dark te" placeholder="Enter Email"  required>
+                            <button class = "py-3 px-12 border border-rColor hover:bg-transparent  hover:text-rColor hover-transition rounded-md hover-transition text-white bg-rColor mt-5 w-full">Contact Us</button>
+                         </form>
+                        </div></li>
+                        
+                     </div>
+                     
+                    </ul>
+                </div>
+                <!-- footer col -->
+            </div>
+             <!-- footer row -->
+             <hr class = "my-8 w-full bg-white opacity-75">
+             <div>
+                
+                <p class = " text-light flex items-center justify-center">&copyRafi,All Right Reserved.</p>
+             </div>
+        </div>
+    </div>
+ </footer>
+ <!-- footer section -->
+ <script src="./js/swiper-bundle.min.js"></script>
+ <script src = "./js/script.js"></script>
+  <!-- swipper js link  -->
+
+  <!-- swipper js link  -->
+</body>
+</html>
